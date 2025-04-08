@@ -11,7 +11,7 @@ export default function Player() {
 
   return (
     <section id="player">
-      <h2>Welcome {playerName ?? "unknown entity"}</h2>
+      <h2>Welcome {playerName || "unknown entity"}</h2>
       <p>
         <input type="text" ref={playerNameInput} />
         <button onClick={handleClick}>Set Name</button>
